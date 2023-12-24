@@ -1,8 +1,13 @@
+// Exercise #1: Debugging
+// Start code here
 let accountBalance = 400;
 let depositAmountFromUser = "10";
 
-accountBalance = Number(accountBalance) + Number(depositAmountFromUser);
+accountBalance = Number(accountBalance)
+depositAmountFromUser = Number(depositAmountFromUser)
 
-let accountBalanceMessage = "Your account balance is " + accountBalance;
+accountBalance = accountBalance + depositAmountFromUser;
+
+let accountBalanceMessage = `Your account balance is ${accountBalance}`;
 
 console.log(accountBalanceMessage);
